@@ -1,4 +1,3 @@
-# ampel
 
 import pyb
 from pyb import Accel,Pin, Timer
@@ -8,17 +7,17 @@ import time
 
 wackelgrenze=3.5
 # Uhrzeit
-h=18
-m=32
+h=15
+m=59
 s=0
-# weekday is 0-6 for Mon-Sun
-#day=0 # mon
-#day=1 # tue
-#day=2 # wed
-#day=3 # thu
-#day=4 # fri
-#day=5 # sat
-day=6 # sun
+# weekday is 1-7 for Monday through Sunday (opposed to machine.RTC which has 0-6!)
+day=1 # mon
+#day=2 # tue
+#day=3 # wed
+#day=4 # thu
+#day=5 # fri
+#day=6 # sat
+#day=7 # sun
 #######################################################
 blinking=1
 nacht=0
